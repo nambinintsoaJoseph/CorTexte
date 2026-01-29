@@ -13,7 +13,7 @@ The user can enter their text, click the button, and receive suggested correctio
 - [x] Spelling and grammar error detection.
 - [x] Displaying possible corrections.
 - [x] Displaying the final corrected text.
-- [ ] Dark / light mode
+- [x] Dark / light mode
 
 # Installation
 
@@ -42,5 +42,5 @@ npm run dev
 
 Alternatively, you can use yarn or pnpm if you have them installed.
 
-⚠️ Important Note
+⚠️ Important Note:
 This React frontend requires a backend API for full functionality. The API is currently private.
