@@ -6,7 +6,6 @@ import Loader from "../Loader";
 function PossibleCorrection() {
     const { loading, response, error, text } = useContext(CorrectionContext);
 
-    // Nombre de corrections
     const correctionCount = response?.matches?.length || 0;
 
     return (
@@ -32,7 +31,6 @@ function PossibleCorrection() {
                 )}
                 {!loading && !error && correctionCount === 0 && (
                     <div className="flex flex-col items-center justify-center h-full text-center">
-                        {/* Illustration SVG */}
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="w-16 h-16 mb-4 text-green-cortexte"
