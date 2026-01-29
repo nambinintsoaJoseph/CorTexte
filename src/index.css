@@ -30,6 +30,18 @@
 
 /* ------------------------------------------------------- */
 
+.scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+    background: #f7f7f7;
+    border-radius: 9999px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: #009C65; 
+    border-radius: 9999px;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
