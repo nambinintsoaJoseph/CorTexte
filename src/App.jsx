@@ -1,13 +1,17 @@
 import Home from "./pages/Home"
 import { CorrectionProvider } from "./context/CorrectionContext"
+import { ThemeProvider } from "./context/ThemeContext"
 
 function App() {
   
   return (
     <>
-      <CorrectionProvider>
+      <ThemeProvider>
+        <CorrectionProvider>
           <Home />
-      </CorrectionProvider>
+        </CorrectionProvider>
+      </ThemeProvider>
+      
     </>
   )
 }

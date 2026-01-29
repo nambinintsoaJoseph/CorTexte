@@ -11,7 +11,7 @@ function Correction() {
             </div>
 
             <div className="mt-4">
-                <p className="pt-2 text-gray-800 whitespace-pre-line">{correctedText}</p>
+                <p className="pt-2 whitespace-pre-line">{correctedText}</p>
             </div>
         </div>
     );

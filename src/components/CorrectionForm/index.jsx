@@ -20,7 +20,7 @@ function CorrectionForm() {
             <form className="mx-4" onSubmit={handleSubmit}>
                 <div className="mx-auto">
                     <textarea
-                        className="w-full bg-[#F7F7F7] h-[186px] rounded-2xl border border-[#D4D4D4] p-4 outline-none resize-none"
+                        className="w-full bg-[#F7F7F7] h-[186px] rounded-2xl border border-[#D4D4D4] p-4 outline-none resize-none text-black"
                         value={text}
                         onChange={(e) => setText(e.target.value)}
                         placeholder="Saisissez votre texte ici..."

@@ -1,6 +1,11 @@
+import { useContext } from 'react';
+import { ThemeContext } from '../../context/ThemeContext';
 import logo from '../../assets/logo.svg'
 
 function Header() {
+
+    const { theme, textButtonTheme, changeTheme } = useContext(ThemeContext); 
+
     return (
         <header className='p-2 flex justify-between'>
             <div className='w-fit'>
@@ -13,8 +18,11 @@ function Header() {
             </div>
 
             <div className='self-center'>
-                <button className='font-inter text-sm md:text-base'>
-                    <i className='fa fa-moon'></i> Mode nuit
+                <button className='font-inter text-sm md:text-base'
+                    onClick={() => changeTheme()}
+                >
+                    {theme == 'light' ? (<i className='fa fa-moon'></i>) : (<i className='fa fa-sun'></i>)}
+                    {' '}Mode {textButtonTheme}
                 </button>
             </div>
         </header>
